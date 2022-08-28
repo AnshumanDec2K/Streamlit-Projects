@@ -15,7 +15,6 @@ if var:
       url=f"http://www.omdbapi.com/?t={var}&apikey=bacb3c59"  
       resp=requests.get(url)
       resp=resp.json()
-    #   st.write(resp)
       c1,c2=st.columns([3,5])
       with c1:
         st.image(resp['Poster'])
